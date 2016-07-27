@@ -1,5 +1,9 @@
 /* app css stylesheet */
 
+body{
+  background-image: url("images/background.jpg");
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -50,4 +54,9 @@ h5{
   background: #8FBC8F;
   padding: 10px;
   color: #2F4F4F;
+}
+
+.animated{
+  animation-duration: 2s;
+  animation-delay: 2s;
 }

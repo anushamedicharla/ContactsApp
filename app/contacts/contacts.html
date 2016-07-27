@@ -1,6 +1,6 @@
 <div class="row" ng-controller="contactsCtrl">
 	<div class="large-10 columns">
-			<div data-alert ng-show="msg" class="alert-box">{{msg}}</div>
+			<div data-alert ng-show="msg" class="alert-box animated fadeOut">{{msg}}</div>
 			<div class="row" ng-show="contactShow">
 				<div class="panel">
 					<h3>{{name}}</h3>
@@ -172,16 +172,17 @@
 						<td>{{contact.company}}</td>
 						<td>{{contact.email}}</td>
 						<td>
-							<a class="button tiny" ng-click="showEditForm(contact)">Edit</a>
-							<a class="button tiny alert" ng-click="removeContact(contact)">Delete</a>
+							<a class="button tiny round" ng-click="showEditForm(contact)">Edit</a>
+							<a class="button tiny alert round" ng-click="removeContact(contact)">Delete</a>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 	<div class="small-12 large-2 columns">
-		<a class="button large" ng-click="showAddForm()" ng-hide="addFormShow">+</a>
-		<a class="button large" ng-click="hide()" ng-show="addFormShow">-</a>
-		<a class="button large" ng-click="hide()" ng-show="contactShow">-</a>
+		<a class="button large round" ng-click="showAddForm()" ng-hide="addFormShow">+</a>
+		<a class="button large round" ng-click="hide()" ng-show="addFormShow">-</a>
+		<a class="button large round" ng-click="hide()" ng-show="editFormShow">-</a>
+		<a class="button large round" ng-click="hide()" ng-show="contactShow">-</a>
 	</div>
 </div>
