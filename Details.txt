@@ -1,0 +1,5 @@
+firebase
+angular firebase
+bower and npm --> package.json
+angular seed
+foundation.css --> instead of bootstrap
